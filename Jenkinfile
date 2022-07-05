@@ -1,7 +1,7 @@
 pipeline {
     agent {label 'java' }
     parameters {
-    choice(name: 'choices',choices:['ONE','TWO'])
+    choice(name: 'choices', choices: ['ONE','TWO'])
     }
     stages {
         stage('clone step') {
